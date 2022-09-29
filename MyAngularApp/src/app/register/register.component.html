@@ -1,0 +1,46 @@
+<!-- <div class="basic-container">
+    <mat-card-title> {{registerTitle}}</mat-card-title>
+    <form [formGroup]="registrationForm" novalidate  autocomplete="off" (keydown.enter)="$event.preventDefault()">
+        </form>
+</div>  -->
+<div class="medium-list">
+    <div class="list-viewer-wrapper">
+        <div class="list-header-title">Register</div>
+        <form [formGroup]="registrationForm">
+            <div class="form-container">
+                <mat-form-field>
+                    <mat-label>First Name</mat-label>
+                    <input id="firstName" matInput formControlName="firstName" [(ngModel)]="firstName" placeholder="Enter user first name" >
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Middle Name</mat-label>
+                    <input id="middleName" matInput formControlName="middleName" [(ngModel)]="middleName" placeholder="Enter user first name" >
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Last Name</mat-label>
+                    <input id="lastName" matInput formControlName="lastName" [(ngModel)]="lastName" placeholder="Enter user first name" >
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Email Id</mat-label>
+                    <input id="userEmail" matInput formControlName="userEmail" [(ngModel)]="userEmail" placeholder="Enter user first name" >
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input id="userPassword" matInput formControlName="userPassword" [(ngModel)]="userPassword" placeholder="Enter user first name" >
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Confirm Password</mat-label>
+                    <input id="confirmPassword" matInput formControlName="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Enter user first name" >
+                </mat-form-field>
+                
+                <section class="example-section">
+                    <mat-checkbox class="example-margin">Terms&Condition</mat-checkbox>
+                  </section>
+                  <div class="text-center">
+                  <button type="submit" mat-raised-button color="primary" >Register</button>
+                  <button type="reset" mat-raised-button color="accent" style="margin: 10px;" >Reset</button> 
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

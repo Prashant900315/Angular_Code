@@ -1,0 +1,80 @@
+<!-- <div class="bootsrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Menu</h3>
+      </div>
+      <div class="col-md-9">
+        <h3>Main Menu</h3>
+      </div>
+    </div>
+  </div>
+</div> -->
+<body style="background-image: url('assets/345330.jpg')">
+<p>
+    <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+      
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>
+        <!-- <button mat-button routerLink="/">{{title}}</button> -->
+        <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
+      </span>
+      <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+        <button mat-button routerLink="/login" *ngIf="!loggedin">
+          <mat-icon>power_settings_new</mat-icon>
+          Login
+        </button>
+        <button mat-button *ngIf="loggedin" (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon>
+          Logout
+        </button>
+        <button mat-button *ngIf="loggedin" (click)="user()">
+          <mat-icon>person</mat-icon>
+          User
+        </button>
+      </div>
+     
+       <!-- <span style="margin: auto; text-align: center;" >Home</span>  -->
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>verified_user</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+          </mat-toolbar>
+          <app-login></app-login>
+         <app-footer></app-footer> 
+         <!-- <app-sidenavbar></app-sidenavbar>  -->
+          </p>
+          
+      <!-- <mat-toolbar-row>
+            <span>Second Line</span>
+            <span class="example-spacer"></span>
+            <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+          </mat-toolbar-row> 
+    
+    </p> -->
+     
+      <!-- <p>
+        <mat-toolbar color="primary">
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span>My App</span>
+          <span class="example-spacer"></span>
+          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>verified_user</mat-icon>
+          </button>
+        </mat-toolbar>
+      </p> -->
+    </body>
+      

@@ -1,0 +1,7 @@
+discovery server--- clean,update,install
+config server--  clean,update,install
+Auth server--  clean,install
+model server--  clean,update,install
+master server--clean,update,install,run
+cam_automation--clean,update,install,run
+gateway server--clean,update,install,run

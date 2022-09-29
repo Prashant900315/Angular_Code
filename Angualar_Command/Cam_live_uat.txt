@@ -1,0 +1,32 @@
+export const config = {
+  // tokenApiUrl: 'authServices',
+  tokenApiUrl: 'omnifin-ms-in-monolithic',
+ // camSheetFuntionId: '300020034',  local function id
+ // camAllocationFuntionId: '300020033',  local function id
+  preDealFuntionId: '8000317',
+  camSheetFuntionId: '300020034',  // cloud function id
+  camAllocationFuntionId: '300020033', // cloud function id
+ 
+  idleSessionTimeOut: 1800,
+ // backendAPIBaseURL: 'http://125.21.254.46:9090/gateway-service/', //UAT URL
+ // dealViewerURL:'http://125.21.254.46:9090/omnifinDealViewer', //UAT URL
+ // backendAPIBaseURL: 'http://localhost:9090/gateway-service/',
+  MsDeployedSameServer: 'Y',
+  MsIpAddress: 'localhost',
+  MsbasePort: '8080',
+  Msprotocol:'http:',
+  // baseContext: '',
+  backendAPIBaseURL: '',
+  baseContext: 'gateway-service/',
+  dealViewerURL:'',
+  // masterAPIURL: 'master/',
+  masterAPIURL: 'omnifin-ms-in-monolithic/',
+  // camAPIURL: 'cam-automation/',
+  camAPIURL: 'omnifin-ms-in-monolithic/',
+  workAllocationURL: 'omnifin-ms-in-monolithic/',
+  omnifinThirdPartyApiURL: 'omnifin-third-party-api-wrapper/',
+  jasperURL: 'jasper/',
+  queryFlag:'N',
+  genericKeys: '"LOAN_TYPE","RATE_TYPE","RATE_METHOD","REPAYMENT_MODE","LOAN_PURPOSE", "RISK_CATEGORIZATION","SECURITY_TYPE","SOURCE_TYPE","SOURCE_DESCRIPTION","APF_NAPF","SECTOR_TYPE","TYPE_OF_LOAN","AC_TYPE","PROPERTY_TYPE","PROPERTY_CATEGORY","PROPERTY_DESC","PROPERTY_AREA","PROPERTY_STATUS","PROPERTY_LOCATION","PROPERTY_CLASS","SPECIAL_CONDITION","VERIFICATION_METHOD","INCOME_SOURCE_TYPE","CASE_INCOME_ELIGIBILITY","GENDER_INDIVIDUAL","CUSTOMER_RELIGION","PROFILE_OF_CUSTOMER","MARITAL_STATUS","CUST_TYPE","EDU_DETAIL","CUST_ROLE","CAST_CATEGORY","ADDRESS_TYPE","PROPERTY_TITLE","INSTALLMENT_TYPE","VERTICAL","DOCUMENT_STATUS","INTEREST_CAL","RELATION_TYPE","POLICY_TYPE","INSURANCE_PRODUCT","CUST_CONSTITUTION","VALUATION_METHOD","LOAN_TYPE_TOP_UP","END_USER","STAKEHOLDER_TYPE","DESIGNATION","CUST_CATEGORY","CUST_BUS_SEGMENT","NATURE_OF_BUSINESS","DOCUMENT_TYPE","DEAL_CATEGORY","SECURITY_TYPE","STOCK_TYPE","STOCK_NATURE","VERIFICATION_ACTION","APPRAISER_TYPE","QUERY_TYPE","RESOLUTION_STATUS"'
+
+};

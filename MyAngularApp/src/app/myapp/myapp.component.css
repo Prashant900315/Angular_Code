@@ -1,0 +1,16 @@
+.fullBg{
+    width: 1350px;
+    height: 630px;
+}
+
+mat-card-image{
+    width: 1350px;
+    height: 630px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

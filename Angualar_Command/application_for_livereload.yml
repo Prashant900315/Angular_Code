@@ -1,0 +1,10 @@
+sptring:
+   devtools:
+     restart:
+       enabled: true
+       log-condition-evaluation-delta: false
+       trigger-file: trigger
+       
+         
+  
+    

@@ -1,0 +1,259 @@
+#Window
+//One Time//
+> Run cmd as admin
+> npm i -g @angular/cli  (select as yes)
+
+> open powerShell (run as admin) set-executionpolicy remotesigned
+
+> ng v  // To check CLI version
+To Create New Project 
+
+ng new omnifinCamAutomation
+
+Move in project directory(omnifinCamAutomation)
+cd omnifinCamAutomation
+
+If missing node_modules then execute
+npm install
+
+Run Application
+
+ng serve
+
+Clean Cashe and update npm packages
+-----------------------------------
+npm cache clean --force
+npm install --update-binary --no-shrinkwrap
+
+
+Add Angular material in project
+------------------------------------
+ng add @angular/material
+
+
+Add highcharts packages.
+-------------------------
+npm install highcharts --save
+npm install highcharts-angular --save
+
+Add Flex-layout packages
+-------------------------
+npm install @angular/flex-layout @angular/cdk --save
+
+
+1. Create new Layout module
+----------------------
+	ng g m layouts
+
+2. Create new Layout components
+----------------------
+	ng g c layouts/welcome
+	ng g c layouts/camAllocation
+	ng g c layouts/camDetails
+	ng g c layouts/leadSales
+	ng g c layouts/verification
+
+3. Create new Shared module
+----------------------
+	ng g m shared
+	
+
+4. Create Shared Components
+--------------------------------
+	ng g c shared/components/header
+	ng g c shared/components/footer
+	ng g c shared/components/sidebar
+	ng g c shared/components/headerLogined
+	
+
+
+5. Create omnifinModule components
+--------------------------
+ng g c omnifin/components/login
+ng generate service omnifin/components/login/LoginAPIService
+ng g c omnifin/components/camSheet
+ng generate service omnifin/components/camSheet/CamSheetAPI
+ng g c omnifin/components/camPersonalDetails
+ng generate service omnifin/components/camPersonalDetails/CamPersonalAPI
+ng g c omnifin/components/pageNotFound
+ng g c omnifin/components/loanDetails
+ng generate service omnifin/components/loanDetails/LoanDetailsAPIService
+ng g c omnifin/components/camAllocationDetails
+ng generate service omnifin/components/camAllocationDetails/CamAllocationAPI
+ng g c omnifin/components/camSheetHeader
+ng generate service omnifin/CommonAPI
+ng g c omnifin/components/cam-personal-details/personalDetailsWrapper
+ng g c omnifin/components/cam-personal-details/personalDetailsHeader
+
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/customerDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/addressDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/referenceDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/dependentDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/dedupeDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/employmentDetails
+
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/corporateCustomerDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/corporateManagementDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/corporateCreditRatingDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/corporateBusinessActivityDetails
+ng g c omnifin/components/cam-personal-details/personal-details-wrapper/corporateBusinessDescriptionDetails
+ng g c omnifin/components/camPreviewPopup
+
+ng g c omnifin/components/backgroundDetails
+ng generate service omnifin/components/backgroundDetails/BackgroundAPI
+ng g c omnifin/components/bankDetails
+ng generate service omnifin/components/bankDetails/BankAPI
+ng g c omnifin/components/obligationDetails
+ng generate service omnifin/components/obligationDetails/ObligationAPI
+ng g c omnifin/components/incomeEligibilityDetails
+ng generate service omnifin/components/incomeEligibilityDetails/IncomeEligibilityAPI
+ng g c omnifin/components/specialConditionDetails
+ng generate service omnifin/components/specialConditionDetails/SpecialConditionAPI
+ng g c omnifin/components/deviationDetails
+ng generate service omnifin/components/deviationDetails/DeviationAPI
+ng g c omnifin/components/documentDetails
+ng generate service omnifin/components/documentDetails/DocumentAPI
+ng g c omnifin/components/assetDetails
+ng generate service omnifin/components/assetDetails/AssetAPI
+
+ng g c omnifin/components/sourceDetails
+ng generate service omnifin/components/source-details/sourceDetailsAPI
+
+ng g c omnifin/components/asset-details/property
+
+ng g c omnifin/components/asset-details/vehicle
+ng g c omnifin/components/asset-details/other
+ng g c omnifin/components/asset-details/machine
+ng g c omnifin/components/asset-details/bankGuarantee
+ng g c omnifin/components/asset-details/debtor
+ng g c omnifin/components/asset-details/fixedDeposit
+ng g c omnifin/components/asset-details/insurance
+ng g c omnifin/components/asset-details/sblc
+ng g c omnifin/components/asset-details/securities
+ng g c omnifin/components/asset-details/stock
+
+ng g c omnifin/components/cam-allocation-details/downloadDetailsPopup
+
+ng g c omnifin/components/lead-capturing-details/LeadCapturingSearch
+
+ng g c omnifin/components/lead-capturing-details/LeadDetails
+ng g c omnifin/components/lead-capturing-details/LeadCustomer
+ng g c omnifin/components/lead-capturing-details/LeadCustomerAddress
+ng g c omnifin/components/lead-capturing-details/LeadLoanDetails
+ng generate service omnifin/components/lead-capturing-details/LeadCapturingAPI
+
+
+
+ng g c omnifin/components/lead-allocation-details/LeadAllocationSearch
+ng g c omnifin/components/lead-allocation-details/LeadAllocation
+ng generate service omnifin/components/lead-allocation-details/LeadAllocationAPI
+
+ng g c omnifin/components/lead-tracking-details/LeadTrackingSearch
+ng g c omnifin/components/lead-tracking-details/LeadTracking
+ng generate service omnifin/components/lead-tracking-details/LeadTrackingAPI
+
+
+ng g c omnifin/components/field-verification-capturing/FieldVerificationCapturingSearch
+ng g c omnifin/components/field-verification-capturing/FieldVerificationCapturing
+ng generate service omnifin/components/field-verification-capturing/FieldVerificationCapturingAPI
+
+ng g c omnifin/components/field-verification-completion/FieldVerificationCompletionSearch
+ng g c omnifin/components/field-verification-completion/FieldVerificationCompletion
+ng generate service omnifin/components/field-verification-completion/FieldVerificationCompletionAPI
+
+
+ng g c omnifin/components/legal-verification-capturing/LegalVerificationCapturingSearch
+ng g c omnifin/components/legal-verification-completion/LegalVerificationCompletionSearch
+
+ng g c omnifin/components/rcu-verification-capturing/RcuVerificationCapturingSearch
+ng g c omnifin/components/rcu-verification-completion/RcuVerificationCompletionSearch
+
+ng g c omnifin/components/technical-verification-capturing/TechnicalVerificationCapturingSearch
+ng g c omnifin/components/technical-verification-completion/TechnicalVerificationCompletionSearch
+
+
+ng g c omnifin/components/repaymentDetails
+ng g c omnifin/components/installmentDetails
+ng g c omnifin/components/chargesDetails
+ng g c omnifin/components/otherChargesDetails
+ng g c omnifin/components/insuranceDetails
+
+6. Create new omnifinModule module
+----------------------
+ng g m omnifin
+
+7. Install Sweetalert2
+-------------------------------------------
+npm install sweetalert2
+
+https://sweetalert2.github.io/#examples
+https://sweetalert2.github.io/
+
+8. Double Submit 
+-------------------------------------
+npm install ngx-prevent-double-submission --save
+
+https://www.npmjs.com/package/ngx-prevent-double-submission
+
+9. Disable browser back button 
+-------------------------------------
+npm install --save angular-disable-browser-back-button
+
+https://www.npmjs.com/package/angular-disable-browser-back-button
+
+10. Disable Auto update Visual Studio Code
+------------------------------------------------------------------
+
+File --> Preference --> Setting -- (search as update)  --> Extensions should uncheck both options, Updates should uncheck both options and update mode should select as none and restart tool. 
+
+11. How to Implement Idle Timeout in Angular
+
+https://bearnithi.com/2020/03/22/how-to-handle-user-idleness-and-session-timeout-in-angular/
+
+12. Deploying Angular in Jboss
+--------------------------------------------------------------------------------------------------
+
+Step :1
+
+Run Command:  E:\Workspace_Cloud\Workspace_Microservice\MicroServices\omnifinCamAutomation> ng build --prod --base-href ./
+
+Step : 2
+
+Run Command:  E:\Workspace_Cloud\Workspace_Microservice\MicroServices\omnifinCamAutomation\dist\omnifinCamAutomation>jar -cvf omnifinCamAutomation.war *
+
+
+Step : 3
+
+Deploy : D:\jboss-eap-7.1\jboss-eap-7.1\standalone\deployments\omnifinCamAutomation.war
+
+
+Step : 4
+
+http://localhost:8080/omnifinCamAutomation
+
+13. Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option in your 'tsconfig' or 'jsconfig' to remove this warning.ts(1219)
+------------------------------------------------------------------------------
+In VSCode go to File ->preferences -> settings,(search as experimentalDecorators) you will see an option to enable/disable experimentalDecorators. Check it and save the settings file. Done
+
+Go to File -> Preferences -> Settings. 2. Search "experimentalDecorators" 3. Check Enable/disable experimentalDecorators 4. Press Ctrl + S to save settings.
+
+14. Activate Auto save
+------------------------------------------
+File --> Auto Save (Checked)
+
+15. 
+Already predefined breakpoints are xs, sm, md, lg. Xs is used for mobile screen sizes, sm for close to tablet size screens and md, lg for desktop.
+
+@Input is used to pass data from parent to child
+
+@Output, can be used when you want to pass data from the child to the parent
+
+16.
+-------------------------------------------------
+ npm install ng2-currency-mask --save
+https://stackblitz.com/edit/ng2-currency-mask-sample
+
+ng build --prod --base-href ./
+cd dist/omnifinCamAutomation
+jar -cvf omnifinCamAutomation.war *
+set path=C:\Program Files\Java\jdk1.8.0_60\bin

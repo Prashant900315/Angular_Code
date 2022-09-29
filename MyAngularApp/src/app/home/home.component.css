@@ -1,0 +1,11 @@
+.mat-accent{
+    background: #00c3ff;
+    color: #fff;
+}
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+.container h1{
+    color: rgb(218, 18, 18);
+}

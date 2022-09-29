@@ -1,0 +1,158 @@
+Angular cli command---->
+
+C:\Users\user>npm -v
+6.12.0
+
+npm uninstall -g @angular/cli
+npm cache verify
+# if npm version is < 5 then use `npm cache clean`
+npm install -g @angular/cli@9
+
+C:\Users\user>node -v
+v12.13.0
+
+C:\Users\user>
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 11.2.0
+Node: 12.13.0
+OS: win32 x64
+
+Angular:
+...
+Ivy Workspace:
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1102.0 (cli-only)
+@angular-devkit/core         11.2.0 (cli-only)
+@angular-devkit/schematics   11.2.0 (cli-only)
+@schematics/angular          11.2.0 (cli-only)
+@schematics/update           0.1102.0 (cli-only)
+
+C:\Users\user>tsc -v
+Version 4.1.3
+
+C:\Users\user>npm install -g @angular/cli
+npm ERR! Unexpected end of JSON input while parsing near '...iEaV5DDYVVJU4KkjWOmLF'
+
+
+C:\Users\user>npm install -g npm
+C:\Users\user\AppData\Roaming\npm\npm -> C:\Users\user\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+C:\Users\user\AppData\Roaming\npm\npx -> C:\Users\user\AppData\Roaming\npm\node_modules\npm\bin\npx-cli.js
++ npm@7.6.3
+added 253 packages from 898 contributors in 59.308s
+
+
+E:\>cd ANGULAR_WORKSPACE
+
+E:\ANGULAR_WORKSPACE>npm -v
+7.6.3
+
+
+E:\ANGULAR_WORKSPACE>npm install --global npm@6
+
+added 2 packages, removed 235 packages, changed 3 packages, and audited 54 packages in 27s
+
+found 0 vulnerabilities
+
+E:\ANGULAR_WORKSPACE>npm -v
+6.14.11
+
+PS D:\NodeJS\MyApp> ng build --prod
+
+E:\ANGULAR_WORKSPACE>ng serve --o or --open build your application
+E:\ANGULAR_WORKSPACE>npm uninstall -g @angular/cli uninstall angular cli
+
+E:\ANGULAR_WORKSPACE>npm cache clean --force
+
+ng update @angular/cli
+E:\angular\sample-project>npm install --save-dev @angular/cli@latest  -->set latest angular cli
+
+E:\angular\sample-project>npm install bootstrap@3 jquery --save  -->bootstrap installation
+
+E:\ANGULAR_WORKSPACE>npm uninstall -g @angular/cli----->uninstall angular cli 
+If missing node_modules then execute
+npm install
+
+E:\ANGULAR_WORKSPACE>npm cache clean --force
+
+ npm i bootstrap jquery --save
+
+D:\NodeJS\spring-Angular>ng g class Employee
+CREATE src/app/employee.ts (26 bytes)
+
+D:\NodeJS\spring-Angular>ng g c employee-list
+CREATE src/app/employee-list/employee-list.component.html (28 bytes)
+CREATE src/app/employee-list/employee-list.component.ts (302 bytes)
+CREATE src/app/employee-list/employee-list.component.css (0 bytes)
+UPDATE src/app/app.module.ts (501 bytes)
+
+
+D:\NodeJS\spring-Angular>ng g s employee
+CREATE src/app/employee.service.ts (137 bytes)
+
+============================================
+for create angular war file
+ng build --prod --base-href ./
+cd dist/omnifinCamAutomation
+jar -cvf omnifinCamAutomation.war *
+set path=C:\Program Files\Java\jdk1.8.0_60\bin
+
+Add Angular material in project
+------------------------------------
+ng add @angular/material
+
+Add Angular material spinner in project
+------------------------------------
+npm install ngx-spinner --save
+ 
+Add Angular material language translate
+------------------------------------
+npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save
+ The @ngx-translate/core contains the core routines for the translation: The TranslateService and some pipes.
+
+The @ngx-translate/http-loader loads the translation files from your webserver.
+
+
+Add Angular  sweetalert2
+------------------------------------
+npm install sweetalert2
+
+Add Angular  service class
+------------------------------------
+ng generate service hero
+ 
+
+https://www.educba.com/angular-material-header/?source=leftnav
+// only for one json file for whole application
+npm install @ngx-translate/core --save
+//here u can define one or more json files
+npm install ngx-translate-multi-http-loader --save
+
+
+ng update @angular/cli
+
+npm uninstall --save-dev angular-cli
+
+npm install --save-dev @angular/cli@8.3.27 -g
+
+
+iRun the following command in your terminal to uninstall the angular cli (global) package.
+npm uninstall -g @angular/cli
+
+latest version
+npm install -g @angular/cli@latest
+
+npm install --save bootstrap@latest
+
+
+
+

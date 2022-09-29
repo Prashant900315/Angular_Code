@@ -1,0 +1,65 @@
+<!-- <mat-card>
+    <mat-card-content>
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <h2>Log In</h2>
+        <mat-error *ngIf="!loginValid">
+          The username and password were not recognized
+        </mat-error>
+        <mat-form-field>
+          <input matInput placeholder="Email" [(ngModel)]="username" name="username" required>
+          <mat-error>
+            Please provide a valid email address
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+          <mat-error>
+            Please provide a valid password
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="!loginForm.form.valid">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card> -->
+  
+  <div class="card">
+  <div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="container text-center">
+            <img class="img-fluid" style="width: 100px;" src="/assets/login.png" >
+          </div>
+          <h1 class="text-center" style="color: brown;">Login here!!</h1>
+          <!-- creating form-->
+          <form (ngSubmit)="onSubmit()">
+            <mat-form-field class="full-width" >
+              <mat-label>username</mat-label>
+             <input [(ngModel)]="credentials.username" name="username" placeholder="Enter username"  type="text" matInput required/>
+            </mat-form-field>
+            <div fxFlex>
+            <mat-form-field class="full-width" >
+              <mat-label>Password</mat-label>
+              <input [(ngModel)]="credentials.password" name="password" matInput [type]="hide ? 'password' : 'text'" placeholder="Enter Password" required>
+             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+             <!-- <mat-hint align="end" aria-live="polite">{{credentials.password.length}} / 25</mat-hint> -->
+            </mat-form-field>
+            
+            </div>
+
+            <div class="container text-center">
+              <button type="submit" mat-raised-button color="primary" onclick="login();"> Login</button>
+              <button style="margin-left: 10px;" type="reset" mat-raised-button color="accent"> Reset</button>
+            </div>
+          </form>
+          <div class="container text-center">
+           {{credentials|json}}
+           </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
